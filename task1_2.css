@@ -1,0 +1,52 @@
+
+@media (max-width:1024px){
+    .body{
+        display: block;
+        margin: 0px;
+    }
+    img{
+        float: left;
+        width: 32.5%;
+
+    }
+    .pic1 .img{
+        display: flex;
+        width: 32.5%;
+        
+    }
+    .pic2 .img{
+        display: flex;
+        width: 32.5%;
+    }
+    .pic3 .img{
+        display: flex;
+        width: 32.5%;
+    }
+    .pic4 .img{
+        display: block;
+        width: 32.5%;
+    }
+    .pic5 .img{
+        display: block;
+        width: 32.5%;
+    }
+    .pic6 .img{
+        display: block;
+        width: 32.5%;
+    }
+    
+    .p{
+        text-align: left;
+        display: block;
+        width: 1020px;
+        padding: 5px;
+    }
+
+    footer p{
+        box-sizing: border-box;
+        border: 5px solid black;
+        background: black;
+        color: white;
+        text-align: center;
+    }
+}
