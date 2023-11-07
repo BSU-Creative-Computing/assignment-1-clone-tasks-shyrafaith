@@ -1,0 +1,120 @@
+body{
+    background:grey;
+    margin: 0%;
+}
+
+nav{
+    width: 100%;
+    background-color: #1e90ff;
+    overflow: auto;
+    
+}
+
+.navigation ul{
+    margin: 10;
+    padding: 0;
+    list-style: none;
+    line-height: 40px;
+
+}
+
+.navigation li{
+    float: right;
+    padding: 10px;
+    
+
+}
+
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+
+}
+
+nav ul li a:hover{
+    color:blue;
+}
+
+/*whats on*/
+.logo{
+    float: left;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    padding-top: 10px;
+}
+
+/*search bar*/
+.searchform{
+    text-align: center;
+    padding-top: 12px;
+}
+
+/*avengers*/
+ .container{
+    display: flex;
+    background: white;
+    height: 450px;
+    width:300px;
+    justify-content: left;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-size: 10px;
+ }
+
+ .container img{
+    width: 300px;
+ }
+
+ .container h3{
+    padding:8px;
+ }
+ .container p{
+    padding:8px;
+ }
+
+ /*container2*/
+ .container2{
+    display:flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    justify-content: space-around;
+    background: white;
+    float: right;
+    margin: 10px;
+
+ }
+
+.container2 img{
+    margin: 5px;
+    width:180px ;
+    height: 180px;
+}
+
+
+
+/*container3*/
+.container3{
+    display:flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    justify-content: space-around;
+    background: white;
+    float: right;
+    margin-right: 10px;
+
+ }
+
+.container3 img{
+    margin: 5px;
+    width:180px ;
+    height: 180px;
+}
+
