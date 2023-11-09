@@ -1,38 +1,63 @@
 @mixin breakpoint($minwidth, $maxwidth) {
     @media screen and (min-width: $minwidth) and (max-width: $maxwidth){
-    @content;
+        @content;
     }
     }
 
-@media screen and (min-width:801px){
-    .largepic{
-        background-image: url(https://via.placeholder.com/400);
-        background: #8ccff7;
-
-    }
+@mixin img ($minsize, $maxsize){
+    margin-left: $minsize;
+    margin-right: $maxsize;
 }
 
-@media screen and (max-width:800px){
-    header{
-        background-image: url(https://via.placeholder.com/300);
-        background: #8ccff7;
-
-    }
-}
-
-@media screen and (max-width:480px){
-    header{
-        background-image: url(https://via.placeholder.com/200);
-        background: #8ccff7;
-
-    }
+@mixin center (){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
     
+
 
 body{
     margin:0px;
 }
 
+/*hover*/
+.border :hover{
+    background-color: #444;
+}
+
+.containercircle1:hover{
+    background-color: #444;
+}
+
+.containercircle2:hover{
+    background-color: #444;
+}
+
+.containercircle3:hover{
+    background-color: #444;
+}
+
+.containercircle4:hover{
+    background-color: #444;
+}
+
+
+header{
+    background-color:#8ccff7;
+   img{@include center();} 
+    @include breakpoint (481px,800px){
+        img{
+            content: url("300.png");
+        }
+    }
+
+    @include breakpoint (1px,480px){
+        img{
+            content: url("200.png");
+        } 
+    }
+}
 .one{
     display: flex;
     border: 1px solid #4e89ae;
@@ -62,13 +87,13 @@ body{
 }
 
 
+
 .containercircle1{
     background: #4e89ae;
     height: 70px;
     width: 70px;
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
 }
 
 .containercircle2{
@@ -93,6 +118,20 @@ body{
     width: 100px;
     border-radius: 50%;
     display: inline-block;
+}
+
+.border{
+    padding-top: 50px;
+    background: #b1d3e6;
+}
+
+.circle{
+    background: #b1d3e6;
+    display: flex;
+    padding:30px;
+    text-align: center;
+    @include center();
+    @include breakpoint(200px,600px)
 }
 
 footer{
